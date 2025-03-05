@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        background-image: url(https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-44947628.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="navBar">
+        <span id="dotCon" title="More">
+          <div id="st"></div>
+          <div id="nd"></div>
+          <div id="rd"></div>
+        </span>
+        <span class="onhover" title="naviget to Home"
+          ><a href="index.html" class="navA">Home</a></span
+        >
+        <span class="onhover" title="naviget to About"
+          ><a href="About.html" class="navA">About</a></span
+        >
+        <span class="onhover" title="naviget to Contact"
+          ><a href="#address" class="navA">Contact</a></span
+        >
+        <span class="onhover" title="naviget to My Vloges"
+          ><a href="Vloge.html" class="navA">My Vloges</a></span
+        >
+        <span class="onhover" title="Login"
+          ><a href="Login.html" class="navA">Login</a></span
+        >
+        <span class="onhover" title="Sign Up now"
+          ><a href="SignUp.html" class="navA">Sign up</a></span
+        >
+      </div>
+      <br />
+      <label for="search" id="searchLable">Looking For Somthing New:</label>
+      <br />
+      <br />
+      <input
+        type="text"
+        id="search"
+        name="search"
+        placeholder="Search Here..."
+      />
+      <br />
+    </header>
+    <main id="logInMain">
+      <div id="loginBox">
+        <h1>Login Now</h1>
+        <br /><br /><br /><br />
+        <form action="./action.php" method="post" enctype="multipart/form-data">
+          <label for="email" class="lableLogin">Enter Your Email Here: </label>
+          <br />
+          <input type="text" placeholder="Enter Your Email..." id="email" />
+          <br /><br />
+          <label for="password" class="lableLogin"
+            >Enter Your Password Here</label
+          >
+          <br />
+          <input
+            type="password"
+            placeholder="Enter Your Password..."
+            id="password"
+          />
+          <br /><br />
+          <label for="signUp">New To Here?</label>
+          <a target="SignUp.html" id="signUp"><i>SignUp Now</i></a>
+          <br /><br />
+          <div id="loginBtnCon">
+            <input type="submit" value="Login" id="logBtn" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <br />
+      <a href="#navBar"
+        ><span id="goTop"></span>
+        <div id="capR"></div>
+        <div id="capL"></div>
+        <div id="centarlLine"></div
+      ></a>
+      <address id="address">
+        <p>
+          Created by:
+          <a
+            href="https://www.linkedin.com/in/debnath-hati-7b7b3b1b7/"
+            target="_blank"
+            >Debnath Hati</a
+          >
+        </p>
+        <p>
+          Contact information:
+          <a href="mailto:example12342gmail.com">example12342gmail.com</a>.
+        </p>
+        <p>CopyRight &copy; 2025</p>
+        <p id="copy">Please Don't Copy Me</p>
+      </address>
+    </footer>
+  </body>
+</html>
