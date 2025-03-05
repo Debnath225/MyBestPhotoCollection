@@ -1,2 +1,2 @@
 # MyBestPhotoCollection
-pho which i really love
+photos which i really love
