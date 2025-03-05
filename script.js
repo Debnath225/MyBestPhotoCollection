@@ -2,7 +2,7 @@ const dotCon = document.getElementById("dot-con");
 const st = document.getElementById("st");
 const nd = document.getElementById("nd");
 const rd = document.getElementById("rd");
-const copy = document.getElementById("copy");
+const copy = document.getElementById("tcopy");
 
 let getToggle = (toggleMenu = (e) => {
   e = 0;
