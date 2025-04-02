@@ -3,6 +3,7 @@ const st = document.getElementById("st");
 const nd = document.getElementById("nd");
 const rd = document.getElementById("rd");
 const copy = document.getElementById("copy");
+const userUploade =document.getElementById("userUploade");
 
 let getToggle = (toggleMenu = (e) => {
   e = 0;
@@ -28,3 +29,12 @@ copy.addEventListener("copy", (event) => {
   event.clipboardData.setData("text/plain", "Ha Ha Ha");
   event.preventDefault();
 });
+
+    document.getElementById("uplodedPhoto").addEventListener("change", function(event) {
+        let reader = new FileReader();
+        reader.onload = function() {
+            document.getElementById("preview").src = reader.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    });
+  
