@@ -384,6 +384,7 @@
       let i = 0;
       let maxLim = document.getElementById("MaxLim");
       maxLim.style.display = "none";
+      document.getElementById("preview").style.visibility = "hidden";
       let uplodedPhoto = document
         .getElementById("uplodedPhoto")
         .addEventListener("change", function (event) {
@@ -399,6 +400,7 @@
           maxLim.innerHTML = "Max Limit of Uploading Image is reached.";
           maxLim.style.fontFamily = "arial";
           maxLim.style.fontSize = "18px";
+            document.getElementById("preview").style.visibility = "visible";
           uplodedPhoto.target = "#preview";
           loading = "lazy";
         });
