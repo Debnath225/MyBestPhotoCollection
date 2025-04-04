@@ -439,12 +439,12 @@ a:hover {
   border: 2px solid rgba(0, 0, 0, 0.5);
 }
 .vlogBox > video {
-  height: 80%;
-  width: 85%;
-  border-radius: 3vh;
+  height: 100%;
+  width: 98%;
+  border-radius: 2vh;
 }
 .vlogBox > video:hover {
-  transition: all 0.3s ease-in;
+  transition: all 0.25s ease-in;
   border-radius: 0vh;
 }
 details {
