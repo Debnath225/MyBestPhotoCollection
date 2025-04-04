@@ -169,7 +169,27 @@
     </footer>
 
     <script>
-      let play = document.getElementById();
+
+      const search = document.getElementById("search");
+const vlogContainer = document.getElementById("vlogContainer");
+
+const vlogesWrappers = vlogContainer.children;
+
+search.addEventListener("input", () => {
+  const searchValue = search.value.toLowerCase();
+  Array.from(vlogesWrappers).forEach((Wrapper) => {
+    const vlog = Wrapper.querySelector("video, per,h2");
+    if (!vlog) return; // Skip if no video or description found
+    const vlogText = vlog.innerText.toLowerCase();
+    if (vlogText.includes(searchValue)) {
+      Wrapper.style.display = "block";
+    } else {
+      Wrapper.style.display = "none";
+    }
+  });
+});
+      
+      
     </script>
   </body>
 </html>
