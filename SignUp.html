@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="rgb(80, 50, 250)" />
+    <meta name="keywords" content="SignUp, user account, registration" /> 
+    <title>SignUp Now</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://img.icons8.com/?size=100&id=8953&format=png&color=FFFFFF" type="image/x-icon" />
+    <meta name="description" content="Sign up page for users to create an account." />
+    <style>
+      body {
+        background-color: #e4e4e4;;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      #signUpBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        background-color: azure;
+        border-radius: 3px;
+        margin: 0 2vh 0 0 2vh;
+      }
+      #signUpNowBtn {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #signUpNowBtn:hover {
+        background-color: #45a049;
+      }
+      .signUpLabel{
+       font-family: Arial, sans-serif;
+        font-size: 1.2em;
+        margin: 10px 0;
+        color: #333;
+      }
+      #signUph1 {
+        font-family: Arial, sans-serif;
+        font-size: 2em;
+        text-align: center;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div id="navBar" class="navBar">
+        <span id="dotCon" title="More">
+          <div id="st"></div>
+          <div id="nd"></div>
+          <div id="rd"></div>
+        </span>
+        <span class="onhover" title="naviget to Home"
+          ><a href="index.html" class="navA">Home</a></span
+        >
+        <span class="onhover" title="naviget to About"
+          ><a href="About.html" class="navA">About</a></span
+        >
+        <span class="onhover" title="naviget to Contact"
+          ><a href="#address" class="navA">Contact</a></span
+        >
+        <span class="onhover" title="naviget to My Vloges"
+          ><a href="Vloge.html" class="navA">My Vloges</a></span
+        >
+        <span class="onhover" title="Login"
+          ><a href="Login.html" class="navA">Login</a></span
+        >
+        <span class="onhover" title="Sign Up now"
+          ><a href="SignUp.html" class="navA">Sign up</a></span
+        >
+      </div>
+      <br />
+    </header>
+
+    <main>
+      <h1 id="signUph1">Sign Up Now</h1>
+      <form action="./action.php" method="post" enctype="multipart/form-data">
+        <div id="signUpBox">
+
+        <label for="name" class="signUpLabel">Enter Your Name Here: </label>
+        <input type="text" name="name" id="name" placeholder="Enter name..." required />
+        <br /><br />
+        <label for="email" class="signUpLabel">Enter Your Email Here: </label>
+        <input type="email" name="email" id="email"  placeholder="Enter email..." required />
+        <br /><br />
+        <label for="password" class="signUpLabel">Enter Your Password Here: </label>
+        <input type="password" name="password" id="password" placeholder="Enter password..."  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required />
+        <br /><br />
+        <label for="cpassword" class="signUpLabel"
+          >Confirm Your Password Here:</label
+        >
+        <input type="password" name="cpassword" id="password"  placeholder="Confirm password..." required />
+        <br /><br />
+        <input type="submit" value="Sign Up Now!" id="signUpNowBtn" title="signUp"/>
+        <br /><br />
+      </div>
+    </main>
+
+    <footer>
+      <hr />
+      <br />
+      <a href="#navBar"
+        ><span id="goTop"></span>
+        <div id="capR"></div>
+        <div id="capL"></div>
+        <div id="centarlLine"></div
+      ></a>
+      <address id="address">
+        <p>
+          Created by:
+          <a
+            href="https://www.linkedin.com/in/debnath-hati-7b7b3b1b7/"
+            target="_blank"
+            ><mark>Debnath Hati</mark></a
+          >
+        </p>
+        <p>
+          Contact information:
+          <a href="mailto:bestcollection12342@gmail.com?subject=Hello User&body=Hi%20there! how was your experience!!!&cc=another123@gmail.com"
+            ><mark>bestcollection12342@gmail.com</mark></a
+          >
+        </p>
+        <p>CopyRight &copy; 2025</p>
+        <p>Please Don't Copy Me</p>
+      </address>
+    </footer>
+  </body>
+</html>
