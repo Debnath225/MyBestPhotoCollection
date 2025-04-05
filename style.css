@@ -261,12 +261,15 @@ a:hover {
   cursor: pointer;
   color: white;
   font-size: 4vh;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:"currier new";
   background-color: rgba(0, 0, 255, 0.792);
   border: none;
 }
 #logBtn:hover {
+  filter: drop-shadow(0 0 0.65rem gray);
   box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.792);
+  transform: scale(1.02);
+  transition: all 0.3s ease-in;
 }
 
 #about {
