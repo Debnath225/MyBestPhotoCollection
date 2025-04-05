@@ -384,7 +384,7 @@
       let i = 0;
       let maxLim = document.getElementById("MaxLim");
       maxLim.style.display = "none";
-      document.getElementById("preview").style.visibility = "hidden";
+      document.getElementById("preview").style.display = "none";
       let uplodedPhoto = document
         .getElementById("uplodedPhoto")
         .addEventListener("change", function (event) {
@@ -400,7 +400,7 @@
           maxLim.innerHTML = "Max Limit of Uploading Image is reached.";
           maxLim.style.fontFamily = "arial";
           maxLim.style.fontSize = "18px";
-            document.getElementById("preview").style.visibility = "visible";
+            document.getElementById("preview").style.display = "block";
           uplodedPhoto.target = "#preview";
           loading = "lazy";
         });
@@ -408,6 +408,7 @@
       let storedImage = localStorage.getItem("image");
       if (storedImage) {
         document.getElementById("preview").src = storedImage;
+         document.getElementById("preview").style.display = "block";
       }
 
       const body = document.getElementsByTagName("body");
