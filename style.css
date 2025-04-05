@@ -247,6 +247,9 @@ a:hover {
     border: none;
     color:#000000;
   }
+    #LogInNow {
+    font-size: 3vh;
+  }
 }
 #loginBtnCon {
   border-radius: 8px;
