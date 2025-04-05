@@ -13,15 +13,6 @@ const copy = document.getElementById("copy");
 // };
 // window.addEventListener("online", onOffline);
 
-// loading animation 
-document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById('page-content').style.display = 'none'; // Ensure page content is hidden initially
-  setTimeout(function() {
-    document.getElementById('loading-overlay').style.display = 'none';
-    document.getElementById('page-content').style.display = 'block';
-  }, 2000); // Simulate a 2-second loading time
-});
-
 let getToggle = (toggleMenu = (e) => {
   e = 0;
   st.style.transform = `translateY(4px) rotate(-45deg)`;
