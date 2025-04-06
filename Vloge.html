@@ -41,7 +41,7 @@
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  animation: spin 2s linear infinite;
+  animation: spin 2.5s linear infinite;
 }
 #vlogContent{
   display:none;
@@ -225,8 +225,15 @@ search.addEventListener("input", () => {
     }
   });
 });
-      
-      
+      //loading animation 
+      document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('vloContent').style.display = 'none'; // Ensure page content is hidden initially
+  setTimeout(function() {
+    document.getElementById('loadingOverlay').style.display='none';
+    document.getElementById('vlogContent').style.display = 'block';
+    document.getElementById('spinner').style.diplay ='none';
+  }, 2500); // Simulate a 2-second loading time
+});
       
     </script>
   </body>
