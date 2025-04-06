@@ -22,7 +22,7 @@
   </head>
   <body>
 
-    <div id="loading-overlay">
+    <div id="loading-overlay"></div>
   <div id="loading-spinner"></div>
   <div id="page-content">
     <!-- Your website content here -->
@@ -422,7 +422,6 @@
         <p id="copy">Please Don't Copy Me</p>
       </address>
     </footer>
-  </div>
     </div>
     <script>
       let i = 0;
@@ -481,7 +480,7 @@
 document.addEventListener('DOMContentLoaded', function() {
   document.getElementById('page-content').style.display = 'none'; // Ensure page content is hidden initially
   setTimeout(function() {
-    document.getElementById('loading-overlay').style.display = 'none';
+    document.getElementById('loading-overlay').style.backgroundColor:'transparent';
     document.getElementById('page-content').style.display = 'block';
   }, 2000); // Simulate a 2-second loading time
 });
